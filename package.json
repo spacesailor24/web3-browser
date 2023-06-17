@@ -10,7 +10,7 @@
     "lint": "eslint --ext .js,.ts .",
     "lint:fix": "eslint --fix --ext .js,.ts .",
     "prepare": "husky install",
-    "start": "yarn webpack && yarn serve"
+    "start": "npx webpack && npx serve"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.50.0",
@@ -30,7 +30,7 @@
   },
   "lint-staged": {
     "**/*": [
-      "yarn format"
+      "npm run format"
     ]
   },
   "dependencies": {
